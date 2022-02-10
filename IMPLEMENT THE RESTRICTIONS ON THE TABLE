@@ -1,4 +1,8 @@
 #NOT NULL ON CREATE TABLE
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
 SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NOT NULL;
