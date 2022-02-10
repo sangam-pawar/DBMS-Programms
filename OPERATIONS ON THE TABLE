@@ -1,0 +1,28 @@
+#UPDATE TABLE NAME
+UPDATE Customers
+SET ContactName='Juan'
+WHERE Country='Mexico';
+
+#DELETION OPERATION
+#DELETION OF SPECIFIED NO OF ROWS
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+#DELETION OF ALL ROWS
+DELETE FROM Customers;
+
+#MAX MIN 
+SELECT MAX(Price) AS LargestPrice
+FROM Products;
+
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+#COUNT,AVERAGE,SUM
+SELECT COUNT(ProductID)
+FROM Products;
+
+SELECT AVG(Price)
+FROM Products;
+
+SELECT SUM(Quantity)
+FROM OrderDetails;
